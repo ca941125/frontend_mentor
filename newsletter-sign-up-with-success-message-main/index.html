@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <section>
+  <section class="container-access" >
     <div class="access">
       <h1>Stay updated!</h1>
       <p>Join 60.000+ product managers receiving monthly updates on:</p>
@@ -21,15 +21,31 @@
       </ul>
 
       <form action="assets/pages/success.html" method="">
-        <label for="email">Email address:</label>
+        <div class="label">
+          <label for="email">Email address:</label>
+          <label for="error-email">Valid email required</label>
+        </div>
+        
         <input type="email" id="email" placeholder="email@company.com" required>
-        <input type="submit" class="button" id="submit" value="Subscribe to monthly newsletter">
+        <button type="submit" class="button" id="btn">Subscribe to monthly newsletter</button>
       </form>
     </div>
     <div class="image">
       <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
     </div>
   </section>
-  <script src="assets/javascript/scripts.js"></script>
+
+  <section class="container-success" style="display: none;">
+    <div class="success">
+        <img src="assets/images/icon-success.svg" alt="">
+        <h1>Thanks for subscribing!!</h1>
+        <p>A confirmation email has been sent to <span onshow="mostrarEmailEnSpan()"></span>. Please open it and click the button inside to confirm your subscription.</p>
+    </div>
+    <div class="boton">
+        <button class="button">Dismiss message</button>
+    </div>
+  </section>
+
+  <script src="assets/javascript/script.js"></script>
 </body>
 </html>
