@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 5, 5);
+}
+body{
+    margin: 30px;
+}
+section{
+    border: 1px solid salmon;
+    border-radius: 10px;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+ul{
+    margin: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+a:hover{
+    color: salmon;
+    transition: .3s;
+}
