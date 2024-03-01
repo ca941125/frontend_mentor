@@ -1,4 +1,4 @@
- *{
+*{
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
@@ -12,7 +12,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-section{
+.container-access{
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
     width: 50%;
@@ -23,8 +23,8 @@ section{
     justify-content: space-between;
     color: hsl(234, 29%, 20%);
 }
-
-.access{
+/* SECCION ACCESS */
+.container-access .access{
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -32,42 +32,45 @@ section{
     padding: 30px;
 }
 
-.access h1{
+.container-access .access h1{
     font-size: 40px; 
     margin-bottom: 20px;
 }
 
-.access ul{
+.container-access .access ul{
     list-style: none;
 }
 
-.access p{
+.container-access .access p{
     font-size: 14px;
 }
 
-.access li{
+.container-access .access li{
     display: flex;
     align-items: center;
     margin-top: 10px;
     font-size: 14px;
 }
 
-.access img{
+.container-access .access img{
     margin-right: 10px;
 }
-.access form{
+.container-access .access form{
     display: flex;
     flex-direction: column;
     margin: 30px 0;
 }
-
-.access label{
+.container-access .access .label {
+    display: flex;
+    
+}
+.container-access .access label{
     font-size: 12px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.access input {
+.container-access .access input {
     padding: 20px 20px;
     border-radius: 10px;
     border: 1px solid hsl(231, 7%, 60%);
@@ -75,23 +78,77 @@ section{
     cursor:pointer;
 }
 
-.access .button{
+.container-access .access .button{
+    padding: 20px 20px;
+    border-radius: 10px;
     background-color: #212742;
     color: white;
     border: none;
+    cursor:pointer;
 }
 
-.access .button:hover{
+.container-access .access .button:hover{
+    background-image: linear-gradient(to bottom left, rgb(255, 99, 78),  rgb(255, 82, 123));
+    box-shadow: 0px 10px 14px 2px rgb(255, 99, 78);
+    transition: .3s;
+}
+/* SECCION IMAGE */
+.container-access .image{
+    height: 100%;
+} 
+.container-access .image img{
+    height: 100%;
+}
+
+/* SECTION SUCCESS */
+ .container-success{
+    margin: 100px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+    width: 25%;
+    height: 55%;
+    padding: 15px;
+    box-shadow:0px 10px 14px 2px rgba(0,0,0,0.47);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: hsl(234, 29%, 20%);
+}
+
+.container-success .success{
+    padding: 0 30px;
+}
+.container-success img{
+    height: 40px;
+    margin: 15px 0;
+}
+.container-success h1{
+    font-size: 40px; 
+    margin-bottom: 20px;
+}
+.container-success p{
+    font-size: 14px;
+    padding: 0 0 15px 0;
+}
+.container-success button {
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor:pointer;
+    background-color: #212742;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+.container-success .button:hover{
     background-image: linear-gradient(to bottom left, rgb(255, 99, 78),  rgb(255, 82, 123));
     box-shadow: 0px 10px 14px 2px rgb(255, 99, 78);
     transition: .3s;
 }
 
-.image{
-    height: 100%;
-} 
-.image img{
-    height: 100%;
+.container-success .boton{
+    padding: 0 30px;
 }
 
 /* MOBILE DESIGN */
@@ -101,7 +158,7 @@ section{
         height: 100vh;
     }
 
-    section{
+    .container-access{
         margin: 0;
         padding: 0;
         width: 375px;
@@ -113,7 +170,7 @@ section{
         border-radius: 0;
     }
 
-    .access{
+    .container-access .access{
         width: 80%;
         height: 60%;
         padding: 20px;
@@ -123,15 +180,40 @@ section{
         justify-content: right;
     }
 
-    .image img{
+    .container-access .image img{
         display: none;
     }
 
-    .image{
+    .container-access .image{
         background-image: url(../images/illustration-sign-up-mobile.svg);
         background-repeat: no-repeat;
         position: relative;
         border: none;
         height: 40%;
+    }
+
+    .container-success{
+        margin: 10px 0 10px 0;
+        padding: 0;
+        width: 375px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .container-success .success{
+        width: 80%;
+        padding: 20px;
+        margin: 5px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .container-success .boton{
+        padding: 0 30px;
     }
 }
