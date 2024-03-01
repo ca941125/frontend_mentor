@@ -60,16 +60,18 @@ body{
     flex-direction: column;
     margin: 30px 0;
 }
-.container-access .access .label {
+.container-access .access .label{
     display: flex;
-    
+    justify-content: space-between;
 }
 .container-access .access label{
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 10px;
 }
-
+.container-access .access .label #errorMessage{
+    display: none;
+}
 .container-access .access input {
     padding: 20px 20px;
     border-radius: 10px;
@@ -93,6 +95,7 @@ body{
     transition: .3s;
 }
 /* SECCION IMAGE */
+
 .container-access .image{
     height: 100%;
 } 
@@ -101,7 +104,7 @@ body{
 }
 
 /* SECTION SUCCESS */
- .container-success{
+.container-success{
     margin: 100px auto;
     background-color: hsl(0, 0%, 100%);
     border-radius: 25px;
@@ -109,7 +112,7 @@ body{
     height: 55%;
     padding: 15px;
     box-shadow:0px 10px 14px 2px rgba(0,0,0,0.47);
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     color: hsl(234, 29%, 20%);
@@ -192,28 +195,5 @@ body{
         height: 40%;
     }
 
-    .container-success{
-        margin: 10px 0 10px 0;
-        padding: 0;
-        width: 375px;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-shadow: none;
-        border-radius: 0;
-    }
 
-    .container-success .success{
-        width: 80%;
-        padding: 20px;
-        margin: 5px auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .container-success .boton{
-        padding: 0 30px;
-    }
 }
