@@ -20,14 +20,14 @@
         <li><img src="assets/images/icon-list.svg" alt="">And much more!</li>
       </ul>
 
-      <form action="assets/pages/success.html" method="">
+      <form action="" id="form" method="">
         <div class="label">
-          <label for="email">Email address:</label>
-          <label for="error-email">Valid email required</label>
+          <label for=" ">Email address:</label>
+          <label for=" " id="errorMessage">Valid email required</label>
         </div>
         
-        <input type="email" id="email" placeholder="email@company.com" required>
-        <button type="submit" class="button" id="btn">Subscribe to monthly newsletter</button>
+        <input type="email" id="emailValue" placeholder="email@company.com" required>
+        <button type="submit" class="button" id="emailSubscriptionBtn">Subscribe to monthly newsletter</button>
       </form>
     </div>
     <div class="image">
@@ -35,11 +35,11 @@
     </div>
   </section>
 
-  <section class="container-success" style="display: none;">
+  <section class="container-success">
     <div class="success">
         <img src="assets/images/icon-success.svg" alt="">
         <h1>Thanks for subscribing!!</h1>
-        <p>A confirmation email has been sent to <span onshow="mostrarEmailEnSpan()"></span>. Please open it and click the button inside to confirm your subscription.</p>
+        <p>A confirmation email has been sent to <span id="email"></span>. Please open it and click the button inside to confirm your subscription.</p>
     </div>
     <div class="boton">
         <button class="button">Dismiss message</button>
