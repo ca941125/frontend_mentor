@@ -17,4 +17,5 @@ emailBtn.addEventListener('click', function() {
         emailAddress.style.color = "rgb(212, 70, 44)";
         emailAddress.style.border = "1px solid rgb(212, 70, 44)";
     }
+    emailBtn.disabled = true;
 })
