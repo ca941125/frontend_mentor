@@ -1,0 +1,80 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+ 
+html{
+  scroll-behavior: smooth;
+  background-color: #F9EEFF;
+  color: black;
+  width: 100%;
+}
+  
+.fondo{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.fondo  img{
+  width: 100%;
+}
+  
+.contenedor {
+  background-color: white;
+  margin: -200px auto;
+  border-radius: 25px;
+  width: 40%;
+  padding: 10px;
+}
+  
+.contenedor .titulo{
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+  
+.contenedor .titulo h1{
+  margin: 0 0 0 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+  
+.contenedor .card {
+  width: 100%;
+  margin: 10px auto;
+}
+  
+.contenedor .card .card-header {
+  padding: 10px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between
+}
+
+.contenedor .card .card-header h4{
+  font-size: 18px;
+  color: #2D1331;
+}
+  
+.contenedor .card .card-header .botones{
+  border: none;
+  background-color: white;
+  color: #2D1331;
+  font-size: 20px;
+  cursor: pointer;
+}
+  
+.contenedor .card .card-body {
+  display: none;
+  padding: 0 10px;
+}
+  
+.contenedor .card .card-body p{
+  font-size: 1em;
+  color: #B7A6B9;
+  text-align: justify;
+}
