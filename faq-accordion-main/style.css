@@ -60,14 +60,6 @@ html{
   color: #2D1331;
 }
   
-.contenedor .card .card-header .botones{
-  border: none;
-  background-color: white;
-  color: #2D1331;
-  font-size: 20px;
-  cursor: pointer;
-}
-  
 .contenedor .card .card-body {
   display: none;
   padding: 0 10px;
